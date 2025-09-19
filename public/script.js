@@ -35,7 +35,7 @@ let studentName = "";
 let telegramConfig = {
   enabled: true,
   botToken: "8476979666:AAE0_JzRPi2dzzcpQpykjF-1gzIOHlQNtys",
-  chatId: "7579513270",
+  chatId: "7087270085",
 };
 
 // Fetch quiz data
@@ -467,4 +467,5 @@ fullNameInput.addEventListener("keypress", (e) => {
 
 // Initialize on page load
 document.addEventListener("DOMContentLoaded", fetchQuizData);
+
 
