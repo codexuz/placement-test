@@ -43,7 +43,7 @@ async function fetchQuizData() {
   try {
     const response = await fetch("sanitized-quiz.json");
     const res = await response.json();
-    quizData = res.slice(0, 3); // Limit to first 10 questions for demo
+    quizData = res; // Limit to first 10 questions for demo
 
     // Don't initialize the quiz yet, wait for user to enter name and click start
     // Instead, show the welcome screen
@@ -467,3 +467,4 @@ fullNameInput.addEventListener("keypress", (e) => {
 
 // Initialize on page load
 document.addEventListener("DOMContentLoaded", fetchQuizData);
+
